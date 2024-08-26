@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body{
+  font-family: 'Fira Code', monospace;
+  margin: 0px 100px;
+  color: white;
+  background: #000; 
+}
+
+.headerIntro{
+  font-family: 'Inter',monospace;
+}
+
+.typed-out {
+  overflow: hidden;
+  white-space: nowrap;
+  display: inline-block; 
+}
+
+.gradientcanvas::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(
+      45deg,
+      #000000 0%,  
+      #000000 30%,  
+      hsl(277, 76%, 80%) 40%, 
+      rgb(155, 88, 182) 50%, 
+      hsl(204, 70%, 53%) 60%,
+      #000000 80%,  
+      transparent 100%
+  );
+  background-size: 200% 100%;
+  z-index: -1;
+  animation: gradientWave 10s ease-in-out infinite alternate;
+}
+
+
+@keyframes gradientWave {
+  0% {
+      background-position: 100% 0%;
+      opacity: 0;
+  }
+  50% {
+      background-position: 50% 0%;
+      opacity: 1;
+  }
+  100% {
+      background-position: 0% 0%; 
+      opacity: 1;
+  }
+}
