@@ -21,19 +21,21 @@ export default function Home() {
   }, []);
 
   return (
-    <div className="gradientcanvas">
-      <div className='mt-12'>
+    <div className="">
+      <div className='mt-24'>
         <div className="mt-8 pl-6">
           <div className="inline">
             <h1 className="text-[#7feaff] typed-out tracking-wide text-lg font-medium pl-[2px]">
               {displayedText}
             </h1>
           </div>
-          <h1 className="text-5xl m-0 font-bold py-4 headerIntro">I&apos;m Sidhesh,</h1>
-          <h1 className="text-5xl m-0 font-bold py-4 headerIntro">Fullstack Developer.</h1>
-          <p className='py-6 font-semibold w-4/5'>
-            From an early age, my fascination with programming and computers ignited a lifelong passion. Constantly learning and developing, I strive to make a profound impact through innovative solutions and visionary ideas, shaping the future with my unwavering commitment to technological advancement.
-          </p>
+          <div>
+            <h1 className="bg-white bg-opacity-60 inline-block p-2 text-black font-bold text-5xl mt-2 ">I&apos;m Sidhesh,</h1>
+            <h1 className="bg-white inline-block p-2 text-black font-bold text-5xl mt-2 ">A Software Engineer</h1>
+            <p className='py-6 font-semibold w-4/5 text-justify'>
+              Specializing in Information Technology with experience in Fullstack Engineering & Development Operations, I&apos;ve always been captivated by the world of programming. It&apos;s something I genuinely enjoy, sparking a passion that keeps me constantly learn and grow. I thrive on creating innovative solutions and turning visionary ideas into reality, all while embracing the joy of developing and building projects.
+            </p>
+          </div>
         </div>
       </div>
     </div>
