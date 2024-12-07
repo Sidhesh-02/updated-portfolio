@@ -26,7 +26,7 @@ export default function Music() {
     }, []);
 
     return (
-        <div className="mt-12 relative" style={{ height: "352px" }}>
+        <div className="mt-12">
             {/* Loading Spinner */}
             {!isLoaded && (
                 <div

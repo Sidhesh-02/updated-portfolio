@@ -17,6 +17,10 @@ export default function Navigation(){
             'href':'/music',
         },
         {
+            'path': 'Skills',
+            'href':'/skills'
+        },
+        {
             'path': 'Projects',
             'href':'/projects',
         },

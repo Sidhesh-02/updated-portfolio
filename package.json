@@ -11,8 +11,10 @@
   "dependencies": {
     "lucide-react": "^0.436.0",
     "next": "^14.2.19",
+    "next-sanity": "^9.8.25",
     "react": "^18",
-    "react-dom": "^18"
+    "react-dom": "^18",
+    "sanity": "^3.66.1"
   },
   "devDependencies": {
     "@types/node": "^20",

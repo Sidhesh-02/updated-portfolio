@@ -23,19 +23,11 @@ const projects = [
 ]
 export default function project(){
     return(
-        <div>
+        <div className="mt-12">
+            <h2 className="text-center text-3xl font-bold text-gray-100">Projects</h2>
+            <p className="text-center text-gray-100 mt-2">A Catalog of Stories.</p>
             {projects.map((project,id)=>(
                 <div key={id} className="flex items-center my-10 border rounded-xl group md:gap-8 border-zinc-600">
-                    <div style={{ width: '300px', height: '200px', position: 'relative' }}>
-                        <Image
-                            className="ml-4"
-                            src="/logo.png"
-                            alt="Logo"
-                            fill={true} // Makes the image fill the parent container
-                            sizes="100vw" // Adjust sizes for responsive behavior
-                            style={{ objectFit: 'contain' }} // Ensures the image respects its aspect ratio
-                        />
-                    </div>
                     <article className="relative w-full h-full p-4 md:p-8">
                         <div className="flex items-center justify-between gap-2">
                             <div className="text-xs text-zinc-100">
