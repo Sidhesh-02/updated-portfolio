@@ -25,39 +25,10 @@ const profile = {
             rows: 4,
         },
         {
-            name:"socialLinks",
-            title:"Social Links",
-            type:"object",
-            description:"Add your social media links: ",
-            fields:[
-                {
-                    name: "linkedin",
-                    title: "Linkedin URL",
-                    type: "url",
-                    initialValue: "https://linkedin.com/in/",
-                },
-                {
-                    name:"github",
-                    title:"Github URL",
-                    type:"url",
-                    initialValue:"https://github.com/"
-                },
-                {
-                    name: "instagram",
-                    title: "Instagram URL",
-                    type: "url",
-                    initialValue: "https://instagram.com/",
-                },
-                {
-                    name: "youtube",
-                    title: "Youtube URL",
-                    type: "url",
-                    initialValue: "https://youtube.com/",
-                },
-            ]
-        }
-
-        
+            name:"spotifyEmbed",
+            title:"Spotify Embed",
+            type:"string",
+        }    
     ],
 }
 

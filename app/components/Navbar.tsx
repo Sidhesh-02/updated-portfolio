@@ -31,7 +31,7 @@ export default function Navigation(){
 			<div>
 				<div className="flex justify-between items-center mt-8 p-4 font-medium rounded-xl bg-transparent border border-gray-300">
                     <div className="pl-4">
-                        <Image className="w-12 h-8 brightness-200" width={500} height={500} src={"/logo.png"} alt={"logo"} />
+                        <Image className="w-12 h-8 brightness-200" width={500} height={500} src={"/logo.png"} priority={true} alt={"logo"} />
                     </div>
                     
 					<div className="flex gap-8 z-20">

@@ -1,3 +1,5 @@
+"use client"
+import { getTitleAndTaglines } from "@/sanity/sanity.query";
 import {
     Code,
     Codepen,
@@ -12,6 +14,7 @@ import {
     Globe,
     Zap,
 } from "lucide-react";
+import { useEffect, useState } from "react";
 
 const developmentStack = [
     { name: "HTML", icon: <Layout /> },
@@ -39,10 +42,27 @@ const operationStack = [
 ]
 
 const Skills = () => {
+    const [skillHead,setSkillHead] = useState(null);
+    useEffect(()=>{
+        const fetchSkillHead = async()=>{
+            try{
+                const data = await getTitleAndTaglines();
+                setSkillHead(data);
+            }catch(error){
+                alert(error);
+            }
+        }
+        fetchSkillHead();
+    },[]);
+    
     return (
         <div className="mt-12">
-            <h2 className="text-center text-3xl font-bold text-gray-100">Skills</h2>
-            <p className="text-center text-gray-100 mt-2">A Catalog of Warrior.</p>
+            {skillHead && (
+                <div>
+                    <h2 className="text-center text-3xl font-bold text-gray-100">{skillHead[0].skillsPageTitle}</h2>
+                    <p className="text-center text-gray-100 mt-2">{skillHead[0].skillsTagline}</p>
+                </div>
+            )}
             <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-6 mt-8 p-4">
                 {developmentStack.map((skill, index) => (
                     <div

@@ -18,44 +18,8 @@ body{
   display: inline-block; 
 }
 
-.gradientcanvas::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-image: linear-gradient(
-      45deg,
-      #000000 0%,  
-      #000000 30%,  
-      hsl(277, 76%, 80%) 40%, 
-      rgb(155, 88, 182) 50%, 
-      hsl(204, 70%, 53%) 60%,
-      #000000 80%,  
-      transparent 100%
-  );
-  background-size: 200% 100%;
-  z-index: -1;
-  animation: gradientWave 10s ease-in-out infinite alternate;
-}
 
-
-@keyframes gradientWave {
-  0% {
-      background-position: 100% 0%;
-      opacity: 0;
-  }
-  50% {
-      background-position: 50% 0%;
-      opacity: 1;
-  }
-  100% {
-      background-position: 0% 0%; 
-      opacity: 1;
-  }
-}
-#nc-main {
+/* #nc-main {
   position: relative;
   height: 100vh;
   overflow-x: hidden;
@@ -65,10 +29,10 @@ body{
   transition: -webkit-transform 0.4s;
   transition: transform 0.4s;
   transition: transform 0.4s, -webkit-transform 0.4s;
-}
+} */
 
 .full-wh {
-   position: absolute;
+  position: absolute;
   top: 0px;
   left: 0px;
   bottom: 0px;
@@ -77,20 +41,13 @@ body{
 
 .bg-animation {
   position: fixed;
+  z-index: -10;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
 }
 
-
-.bg-animation{
-position: fixed;
-top: 0;
-left: 0;
-width: 100%;
-height: 100%;
-}
 #stars {
 width: 1px;
 height: 1px;
