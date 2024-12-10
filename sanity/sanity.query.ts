@@ -48,3 +48,22 @@ export async function getTitleAndTaglines(){
     }`
   )
 }
+
+export async function getSocialLinks(){
+  return client.fetch(
+    groq`*[_type == "details"]{
+      _id,
+      socialLink,
+    }`
+  )
+}
+
+export async function getSkills(){
+  return client.fetch(
+    groq`*[_type == "skills"]{
+      _id,
+      skillField,
+      learningField
+    }` 
+  )
+}

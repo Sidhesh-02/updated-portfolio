@@ -18,18 +18,10 @@ body{
   display: inline-block; 
 }
 
-
-/* #nc-main {
-  position: relative;
-  height: 100vh;
-  overflow-x: hidden;
-  -webkit-box-shadow: 0 0 30px #241d20;
-  box-shadow: 0 0 30px #241d20;
-  -webkit-transition: -webkit-transform 0.4s;
-  transition: -webkit-transform 0.4s;
-  transition: transform 0.4s;
-  transition: transform 0.4s, -webkit-transform 0.4s;
-} */
+@keyframes spin-slow {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
 
 .full-wh {
   position: absolute;
