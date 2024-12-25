@@ -69,7 +69,7 @@ export default function Music() {
     return (
         loading ? <LoadingSpinner/> : 
         (<>
-            <div className="mt-12 relative">
+            <div className="mt-12 mx-14 lg:mx-0">
                 {album && (
                     <>
                         <h2 className="text-center text-3xl font-bold text-gray-100">

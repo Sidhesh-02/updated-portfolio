@@ -24,7 +24,6 @@ export default function RootLayout({
 				</div>
         <Navbar/>
         {children}
-        <Social/>
       </body>
     </html>
   );
