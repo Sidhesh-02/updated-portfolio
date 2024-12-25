@@ -6,8 +6,7 @@ import {schemaTypes} from './schemaTypes'
 export default defineConfig({
   name: 'default',
   title: 'sanityStudio',
-
-  projectId: 'bkvrlxx2',
+  projectId: process.env.NEXT_PUBLIC_SANITY_PROJECT_ID ?? "",
   dataset: 'production',
   basePath: "/studio",
   plugins: [structureTool()],
