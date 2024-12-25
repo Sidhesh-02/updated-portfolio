@@ -40,7 +40,7 @@ export default function Home() {
 
   return (
     <div className="pl-12 md:px-0">
-      <div className="absolute top-[30%]">
+      <div className="absolute top-[15%] md:top-[30%]">
         {profileData.length > 0 ? (
           profileData.map((profile, index) => (
             <div key={index} className="pl-4 md:pl-6">
