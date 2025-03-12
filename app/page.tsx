@@ -56,14 +56,15 @@ export default function Home() {
                 <h1 className="bg-white bg-opacity-60 inline-block p-2 text-black font-bold text-xl md:text-5xl mt-2">
                   {profile.fullName}
                 </h1>
-                <h1 className="bg-white inline-block p-2 text-black font-bold text-xl md:text-5xl md:mt-2">
+                <h1 className="bg-white border border-lime-300 inline-block p-2 text-black font-bold text-xl md:text-5xl md:mt-2">
                   {profile.position}
                 </h1>
 
                 {/* Bio Content */}
-                <p className="py-6 font-semibold text-sm md:text-base lg:text-lg text-left md:text-justify w-4/5">
+                <p className="border rounded-md border-lime-300 my-2 px-3 py-6 font-semibold text-sm md:text-base lg:text-lg text-left md:text-justify w-4/5 shadow-2xl ">
                   {profile.shortBio}
                 </p>
+
               </div>
             </div>
           ))
