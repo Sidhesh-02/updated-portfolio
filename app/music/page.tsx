@@ -94,6 +94,11 @@ export default function Music() {
                     allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
                     loading="lazy"
                 />
+
+
+
+                <video className="w-auto" src="https://res.cloudinary.com/dhkxu4caj/video/upload/v1751544057/4155072-uhd_2160_4096_25fps_gmw6qb.mp4"
+      autoPlay muted loop/>
             </div>
         </>)
     );
