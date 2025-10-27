@@ -40,6 +40,27 @@ export default function Home() {
 
   return (
     <div className="pl-12 md:px-0">
+      <section className="hero-video">
+        <video 
+          id="mainVideo"
+          autoPlay
+          muted
+          loop
+          playsInline
+          controls
+          preload="metadata"
+          poster="fallback.jpg"
+        >
+          <source src="https://pub-1d62379d4ead43b29a1ea668affbf241.r2.dev/GOPR4107.MP4" type="video/mp4"/>
+          Your browser does not support the video tag.
+        </video>
+
+        <div className="overlay">
+          <h1>Your Website Title</h1>
+          <p>Your tagline or message here</p>
+        </div>
+      </section>
+
       <div className="absolute top-[20%] md:top-[30%]">
         {profileData.length > 0 ? (
           profileData.map((profile, index) => (

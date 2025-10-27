@@ -167,3 +167,35 @@ to {
       transform: rotate(360deg);
   }
 }
+
+
+.hero-video {
+  position: relative;
+  width: 100%;
+  height: 100vh; /* full screen */
+  overflow: hidden;
+}
+
+.hero-video video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* crop nicely */
+  z-index: -1;
+}
+
+.hero-video .overlay {
+  position: relative;
+  text-align: center;
+  color: white;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 2;
+}
+
+.hero-video h1,
+.hero-video p {
+  text-shadow: 0 0 10px rgba(0,0,0,0.6);
+}

@@ -16,7 +16,6 @@ export default function Music() {
     const [loading,isLoading] = useState(false);
     // Fetch all data
 
-    
 
     const fetchData = async () => {
         try {
